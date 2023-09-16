@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgba(108, 108, 231, 0.897);
+            color: white;
+            font: normal 20pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM!!</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript </p>
+    <p id="amigue">Thiaguinho vai comprar o novo Fife Unides</p>
+    <p id="random">Modificar aqui</p>
+    <div>Clique em mim</div>
+    <div id="div__botao">Isso vai virar um botão</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        corpo.style.background = '#E3G4B9'
+        p1.style.color = 'skyblue'
+        var botao = window.document.getElementsByTagName('div')[0]
+        botao.style.color = 'yellow'
+        var d = window.document.getElementById('amigue')
+        d.style.color = 'red'
+        //d.innerText = 'Estou aguardando'
+        window.document.getElementById('amigue').innerText = 'aguardando...'
+        var m = window.document.getElementById('random')
+        m.innerText = 'VAAAAAAI CORINTHIANS!!!!!!!'
+        m.style.color = 'black'
+
+        //Utilizando Selector
+        var bem_loko = window.document.querySelector('div#div__botao')
+        bem_loko.style.color = 'lightblue'
+    </script>
+</body>
+</html>
