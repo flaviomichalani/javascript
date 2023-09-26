@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo js</title>
+    <style>
+        body {
+            background-color: rgb(23, 132, 168);
+            font: normal 20pt Arial;
+            color: white;
+        }
+
+        input {
+            width: 100px;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando aprendizado</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="submit" value="Soma" onclick="soma()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function soma() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var n1 = Number(txtn1.value)
+            var n2 = Number(txtn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}.`
+        }
+    </script>
+</body>
+</html>

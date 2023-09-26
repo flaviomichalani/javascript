@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <label for="">E aí, cerejo, dá onde você é?</label><br>
+    Eu sou do(a) <input type="text" name="txtw" id="txtw">
+    <input type="submit" value="contar pro Toninho" onclick="nacionalidade()">
+    <div id="res"></div>
+
+    <script>
+        function nacionalidade() {
+        var país = document.querySelector('input#txtw').value
+        var res = document.querySelector('#res')
+
+        if (país != 'brasil') {
+            res.innerHTML = (`Gringo calabreso! Você é do(a) ${país}`) 
+            } else {
+            res.innerHTML = `Aí sim, meu Ludmillo! ${país} na veia!`            
+        }
+    }
+    </script>
+</body>
+</html>
